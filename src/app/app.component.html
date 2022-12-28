@@ -1,9 +1,11 @@
 <div class="container">
-  <app-server (serverEmit)="onAddServer($event)" (blueprintEmit)="onAddBlueprint($event)"></app-server>
+  <app-server (serverEmit)="onAddServer($event)"
+   (blueprintEmit)="onAddBlueprint($event)"></app-server>
   <hr>
   <div class="row">
     <div class="col-xs-12">
-      <app-desc *ngFor="let serverElement of serverElements" [tempelem]="serverElement"></app-desc>
+      <app-desc *ngFor="let serverElement of serverElements"
+       [element]="serverElement"></app-desc>
     </div>
   </div>
 </div>

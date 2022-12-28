@@ -12,6 +12,6 @@ export class DescComponent implements OnInit {
   ngOnInit(): void {
   }
 
- @Input('tempelem') element:{type:string,name:string,content:string};
+ @Input() element:{type:string,name:string,content:string};
 
 }
